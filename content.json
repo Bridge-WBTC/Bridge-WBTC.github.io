@@ -1,0 +1,86 @@
+{
+  "key_facts": {
+    "Category": "Wrapped Bitcoin bridge asset",
+    "Network": "Ethereum and supported EVM chains",
+    "Token": "WBTC",
+    "Standard": "ERC-20",
+    "Backing": "Bitcoin-backed wrapped token"
+  },
+  "intent": [
+    {
+      "q": "WBTC bridge supported networks",
+      "a": "WBTC started as an Ethereum ERC-20 token and is widely used across EVM DeFi, including Ethereum, Arbitrum, Optimism, Polygon, Base, and other networks through canonical or third-party bridge routes. The important point is that WBTC on one chain is not automatically the same contract as WBTC on another chain. Users should verify the token address, bridge route, and destination app support before transferring. For the Ethereum canonical token, Etherscan lists WBTC at 0x2260fac5e5542a773aa44fbcfedf7c193bc2c599."
+    },
+    {
+      "q": "How to bridge WBTC without selling Bitcoin exposure",
+      "a": "Bridging WBTC lets a user move wrapped Bitcoin exposure between chains without swapping into ETH, USDC, or another asset first. The route usually locks, burns, mints, or transfers a wrapped representation depending on the bridge design. Before confirming, compare the quoted received amount, bridge fee, source-chain gas, and destination-chain gas needs. WBTC itself represents Bitcoin exposure, but cross-chain bridge risk is separate from WBTC custody risk, so the safest route is one with transparent contracts, enough liquidity, and a token version accepted by your destination protocol."
+    },
+    {
+      "q": "WBTC bridge fees and slippage",
+      "a": "WBTC bridge fees can include source gas, destination gas, a protocol fee, and slippage if the bridge uses liquidity pools. Canonical bridge routes may avoid swap-style slippage but can be slower or more limited in supported chains. Liquidity bridges can be faster, but a large WBTC transfer may move the quoted price or hit available liquidity limits. Always inspect the final received WBTC amount, not just the headline fee. If the transfer is large, compare two routes and consider whether the destination app accepts that exact WBTC contract."
+    },
+    {
+      "q": "WBTC on Arbitrum Optimism and Polygon",
+      "a": "WBTC is commonly used on Arbitrum, Optimism, Polygon, and other EVM networks, but each network has its own token contract and bridge history. A wallet may show the same ticker across networks while the underlying address differs. DeFi markets care about the contract, not only the symbol. If you are bridging WBTC to borrow, lend, or LP, check the protocol's supported asset list first. A bridge that delivers a non-preferred WBTC version can force an extra swap or another bridge transaction."
+    },
+    {
+      "q": "WBTC bridge vs BTC bridge",
+      "a": "A WBTC bridge moves an ERC-20 representation of Bitcoin between smart-contract chains. A BTC bridge or wrap flow starts with native Bitcoin and creates a wrapped asset on another chain. Users who already hold WBTC usually compare bridge routes, while native BTC holders compare custodial wrapping, trust-minimized BTC staking, or exchange withdrawal options. WBTC is liquid in Ethereum DeFi, but it is not native BTC. The best route depends on whether the starting asset is BTC on Bitcoin or WBTC on an EVM chain."
+    }
+  ],
+  "compare": {
+    "title": "WBTC bridge vs native BTC bridge",
+    "rows": [
+      ["Dimension", "WBTC bridge", "Native BTC bridge or wrap"],
+      ["Starting asset", "WBTC ERC-20", "BTC on Bitcoin"],
+      ["Main use case", "Move DeFi Bitcoin liquidity across EVM chains", "Create wrapped BTC exposure"],
+      ["Risk focus", "Bridge route and token representation", "Custody, minting, and redemption process"],
+      ["Best for", "Users already holding WBTC", "Users starting from native Bitcoin"]
+    ]
+  },
+  "faq": [
+    {
+      "q": "Is bridged WBTC the same as WBTC on Ethereum?",
+      "a": "Not always. Ethereum WBTC has a specific ERC-20 contract, while bridged WBTC on another chain uses that chain's token contract. The value may track the same Bitcoin-backed asset, but wallets and DeFi apps treat each contract separately. Confirm the destination contract before assuming it is accepted everywhere."
+    },
+    {
+      "q": "Can I bridge WBTC to Bitcoin?",
+      "a": "Bridging WBTC directly to native Bitcoin is usually not the same as a normal EVM bridge. To end with BTC on the Bitcoin network, users generally need a redemption, exchange, custodian, or specialized route that converts WBTC exposure back to native BTC. Review the provider's redemption terms and fees before starting."
+    },
+    {
+      "q": "Why is my WBTC bridge quote lower than expected?",
+      "a": "The quote may include bridge fees, gas, liquidity-provider fees, slippage, or a different output token version. WBTC is high-value per token, so small percentage fees can still be large in dollar terms. Compare the final received amount and check whether the route is a transfer bridge or a swap-based bridge."
+    },
+    {
+      "q": "What contract should I verify for WBTC?",
+      "a": "On Ethereum, the widely recognized WBTC token contract is 0x2260fac5e5542a773aa44fbcfedf7c193bc2c599. On other chains, the contract will be different. Use the destination chain's explorer, the bridge confirmation screen, and the receiving protocol's token list to verify the correct WBTC address."
+    },
+    {
+      "q": "Can WBTC be bridged to Solana?",
+      "a": "WBTC can appear on non-EVM ecosystems through specialized bridges or wrapped representations, but that is different from a simple Ethereum-to-L2 transfer. Users should be careful with ticker names on non-EVM chains and confirm the issuer, bridge route, and liquidity. A token named WBTC is not automatically the Ethereum WBTC contract."
+    },
+    {
+      "q": "Should I bridge WBTC or swap to USDC first?",
+      "a": "Bridge WBTC if you want to keep Bitcoin exposure and the destination app supports the received WBTC contract. Swap to USDC first if the destination has deeper stablecoin liquidity, cheaper routing, or no useful WBTC market. The decision is a tradeoff between price exposure, bridge liquidity, fees, and what you plan to do after arrival."
+    }
+  ],
+  "niche": {
+    "type": "bridge",
+    "asset": "WBTC",
+    "receive": "WBTC",
+    "supported_networks": ["Ethereum", "Arbitrum", "Optimism", "Polygon", "Base"]
+  },
+  "authority": [
+    { "text": "WBTC official website", "url": "https://wbtc.network/" },
+    { "text": "WBTC on Etherscan", "url": "https://etherscan.io/token/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599" },
+    { "text": "WBTC on CoinGecko", "url": "https://www.coingecko.com/en/coins/wrapped-bitcoin" },
+    { "text": "WBTC on CoinMarketCap", "url": "https://coinmarketcap.com/currencies/wrapped-bitcoin/" },
+    { "text": "WrappedBTC GitHub", "url": "https://github.com/WrappedBTC" }
+  ],
+  "sameAs": [
+    "https://x.com/WrappedBTC",
+    "https://github.com/WrappedBTC",
+    "https://www.coingecko.com/en/coins/wrapped-bitcoin",
+    "https://coinmarketcap.com/currencies/wrapped-bitcoin/"
+  ]
+}
