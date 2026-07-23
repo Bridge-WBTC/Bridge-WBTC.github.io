@@ -1,73 +1,31 @@
-# Bridge WBTC
-> An independent, non-custodial informational dashboard for understanding and comparing routes that transfer Wrapped Bitcoin between supported blockchain networks.
+# WBTC Bridge
 
-## What is Bridge WBTC
-Bridge WBTC means moving Wrapped Bitcoin from one blockchain to another without changing its BTC-denominated asset identity. WBTC is a multichain token backed 1:1 by BTC held by authorized custodians. An informational dashboard displays routes, fees, timing, token contracts, and risks while the user retains wallet control. Bridging differs from a same-chain transfer, a swap into another token, and the custodian-mediated process that converts native BTC into newly minted WBTC.
-
-## How it works
-1. Select the source chain, destination chain, WBTC amount, and receiving address.
-2. The route provider quotes network fees, bridge or relayer charges, expected output, and estimated completion time.
-3. Connect a self-custody wallet, verify both WBTC contracts, approve only the required amount, and submit the source-chain transaction.
-4. Under the hood, the route locks or burns WBTC, then sends a verified cross-chain message; liquidity routes may instead pay the destination from an existing pool.
-5. The destination contract mints, unlocks, or transfers WBTC to the recipient. Track both transactions and verify the received token contract.
+> WBTC Bridge transfers Wrapped Bitcoin between supported blockchains while you keep wallet control; this independent dashboard compares routes, fees, timing, and token contracts.
 
 ## Key facts
-- Ethereum WBTC uses ERC-20 on chain ID 1.
-- Its Ethereum contract is `0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599`.
-- WBTC uses eight decimal places.
-- The official registry identifies native deployments on Ethereum, Solana, TRON, BNB Chain, Base, Kava, and Osmosis.
-- Token standards and contract addresses differ by network.
-- WBTC backing remains custodial even when the bridge interface is non-custodial.
-- LayerZero OFT routes debit WBTC on the source and credit it on the destination while preserving unified supply.
-- Total cost can include source gas, destination execution, relayer fees, bridge fees, and liquidity slippage.
-- Completion ranges from minutes to days; OP Stack standard withdrawals to Ethereum have a seven-day challenge period.
+- Route: source chain  destination chain
+- Deposit: typically minutes
+- Withdraw: may need proving/finalization
+- Gas: native asset on both chains
+- Custody: Non-custodial — your wallet signs
+- Verify: Use the official contracts; beware fake bridge sites
 
-## Common questions
-### Is bridging WBTC safe?
-Safety depends on the verified token contracts, bridge security model, destination chain, and WBTC custody system. Fake tokens, malicious approvals, contract exploits, message-verification failures, and depegging are primary risks.
-
-### Who holds my funds?
-The dashboard does not hold funds or private keys. Route contracts or liquidity providers handle the transfer, while authorized WBTC custodians hold the BTC reserves.
-
-### What fees will I pay?
-Expect source-chain gas plus any bridge, relayer, destination-execution, or liquidity fee shown in the quote. Keep each chain’s native gas token available.
-
-### How long does it take?
-Liquidity and messaging routes commonly finish after source and destination confirmations. Canonical optimistic-rollup withdrawals can require the full challenge period.
-
-### Which chains are supported?
-Support is route-specific. Confirm the route is live and compare every displayed token address with the official WBTC contract registry.
-
-### How do I start?
-Connect a compatible self-custody wallet, choose both networks, verify the recipient and token contracts, review the quote, approve WBTC, and sign the bridge transaction.
-
-### What are the main risks?
-The main risks are bridge exploits, custodian failure, incorrect networks or addresses, counterfeit WBTC, unlimited approvals, insufficient destination gas, low liquidity, and delayed finality.
+## On this page
+- [What is WBTC Bridge?](https://bridge-wbtc.github.io/#what)
+- [How bridging works](https://bridge-wbtc.github.io/#how)
+- [Depositing to the destination](https://bridge-wbtc.github.io/#deposit)
+- [Withdrawing back](https://bridge-wbtc.github.io/#withdraw)
+- [Time and fees](https://bridge-wbtc.github.io/#fees)
+- [Is WBTC Bridge safe?](https://bridge-wbtc.github.io/#safety)
+- [Problems and fixes](https://bridge-wbtc.github.io/#troubleshoot)
+- [FAQ](https://bridge-wbtc.github.io/#faq)
 
 ## App
-- Dashboard: https://bridge-wbtc.github.io/
-- App: https://bridge-wbtc.github.io/dashboard/
+- [WBTC Bridge dashboard](https://bridge-wbtc.github.io/)
+- [Open the app](https://bridge-wbtc.github.io/dashboard/)
 
-## Official resources
-WBTC Website: https://wbtc.network/
-WBTC Documentation: https://docs.wbtc.network/
-Official Contract Addresses: https://docs.wbtc.network/resources/contract-addresses
-Mint and Burn Mechanism: https://docs.wbtc.network/how-wbtc-works/mint-burn-mechanism
-Custody and Security: https://docs.wbtc.network/how-wbtc-works/custody-and-security
-Proof of Reserves: https://wbtc.network/transparency
-Audit Directory: https://docs.wbtc.network/how-wbtc-works/audits-and-smart-contract-security
-Ethereum Contract Source: https://github.com/WrappedBTC/bitcoin-token-smart-contracts
-WBTC DAO Source: https://github.com/WrappedBTC/DAO
-Solana WBTC Source: https://github.com/solana-labs/wbtc
-Official X: https://x.com/WrappedBTC
-
-## Data & references
-Ethereum WBTC Explorer: https://etherscan.io/token/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599
-Base WBTC Explorer: https://basescan.org/token/0x1ceA84203673764244E05693e42E6Ace62bE9BA5
-Solana WBTC Explorer: https://solscan.io/token/5XZw2LKTyrfvfiskJ78AMpackRjPcyCif1WhUsPDuVqQ
-CoinGecko WBTC Data: https://www.coingecko.com/en/coins/wrapped-bitcoin
-DeFiLlama WBTC Data: https://defillama.com/protocol/wbtc
-ERC-20 Standard: https://eips.ethereum.org/EIPS/eip-20
-LayerZero OFT Reference: https://docs.layerzero.network/v2/concepts/technical-reference/oft-reference
-Optimism Standard Bridge: https://docs.optimism.io/app-developers/guides/bridging/standard-bridge
-WBTC Overview: https://en.wikipedia.org/wiki/WBTC
+## Sources
+- [docs.wbtc.network](https://docs.wbtc.network/overview/wbtc-overview)
+- [ethereum.org](https://ethereum.org/bridges)
+- [en.wikipedia.org](https://en.wikipedia.org/wiki/WBTC)
+- [chain.link](https://chain.link/article/what-are-wrapped-tokens)

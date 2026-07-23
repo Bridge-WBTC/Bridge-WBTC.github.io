@@ -1,0 +1,19 @@
+{
+  "name": "WBTC Bridge",
+  "short_name": "WBTC Bridge",
+  "description": "Bridge WBTC between Ethereum, Base, Solana, and other supported chains. Compare routes, fees, timing, and contracts on an independent, non-custodial dashboard.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "lang": "en",
+  "background_color": "#f5f6f8",
+  "theme_color": "#f5f6f8",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
