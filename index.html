@@ -8,217 +8,247 @@
 <link rel="canonical" href="https://bridge-wbtc.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="WBTC Bridge">
+<meta property="og:description" content="Use a WBTC Bridge to bring Bitcoin value onto Ethereum as Wrapped Bitcoin (WBTC), an ERC-20 backed 1:1 by BTC. See the route, fee and time before you sign, and keep your own keys.">
 <meta property="og:url" content="https://bridge-wbtc.github.io/">
 <meta property="og:image" content="https://bridge-wbtc.github.io/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="WBTC Bridge">
+<meta name="twitter:description" content="Use a WBTC Bridge to bring Bitcoin value onto Ethereum as Wrapped Bitcoin (WBTC), an ERC-20 backed 1:1 by BTC. See the route, fee and time before you sign, and keep your own keys.">
+<meta name="twitter:image" content="https://bridge-wbtc.github.io/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://bridge-wbtc.github.io/#website", "url": "https://bridge-wbtc.github.io/", "name": "WBTC Bridge — Move Bitcoin Value to Ethereum as WBTC"}, {"@type": "WebPage", "@id": "https://bridge-wbtc.github.io/#webpage", "url": "https://bridge-wbtc.github.io/", "name": "WBTC Bridge — Move Bitcoin Value to Ethereum as WBTC", "isPartOf": {"@id": "https://bridge-wbtc.github.io/#website"}, "description": "Use a WBTC Bridge to bring Bitcoin value onto Ethereum as Wrapped Bitcoin (WBTC), an ERC-20 backed 1:1 by BTC. See the route, fee and time before you sign, and keep your own keys.", "datePublished": "2026-10-09", "dateModified": "2026-10-09"}, {"@type": "SoftwareApplication", "name": "WBTC Bridge", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://bridge-wbtc.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Bridges"}, {"@type": "ListItem", "position": 3, "name": "WBTC Bridge"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is WBTC backed by real Bitcoin?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Each WBTC is backed one-to-one by BTC held in reserve and can be redeemed back to Bitcoin through the official process."}}, {"@type": "Question", "name": "Do I need ETH for a WBTC Bridge?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. WBTC lives on Ethereum (and other chains), so you need a little ETH for gas to acquire or move it."}}, {"@type": "Question", "name": "Can I convert WBTC back to BTC?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, by redeeming it through the official burn process or by swapping WBTC for BTC on a supported route."}}, {"@type": "Question", "name": "Do I need an account to get WBTC?", "acceptedAnswer": {"@type": "Answer", "text": "To swap for WBTC on-chain, no — you connect a self-custody wallet. The official mint path involves a verified merchant."}}, {"@type": "Question", "name": "What happens if my transaction fails?", "acceptedAnswer": {"@type": "Answer", "text": "A failed transaction reverts and you keep your assets, though the gas for the attempt is spent."}}]}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://bridge-wbtc.github.io/#website", "url": "https://bridge-wbtc.github.io/", "name": "WBTC Bridge — Move Bitcoin Value to Ethereum as WBTC"}, {"@type": "WebPage", "@id": "https://bridge-wbtc.github.io/#webpage", "url": "https://bridge-wbtc.github.io/", "name": "WBTC Bridge — Move Bitcoin Value to Ethereum as WBTC", "isPartOf": {"@id": "https://bridge-wbtc.github.io/#website"}, "description": "Use a WBTC Bridge to bring Bitcoin value onto Ethereum as Wrapped Bitcoin (WBTC), an ERC-20 backed 1:1 by BTC. See the route, fee and time before you sign, and keep your own keys.", "datePublished": "2026-10-09", "dateModified": "2026-10-09"}, {"@type": "SoftwareApplication", "name": "WBTC Bridge", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://bridge-wbtc.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Bridges"}, {"@type": "ListItem", "position": 3, "name": "WBTC Bridge"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is WBTC backed by real Bitcoin?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Each WBTC in circulation is backed one-to-one by BTC held in reserve and can be redeemed back to Bitcoin through the official burn process. The reserve is published and can be checked against the circulating WBTC supply at any time."}}, {"@type": "Question", "name": "Do I need ETH for a WBTC Bridge?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. WBTC lives on Ethereum and other EVM chains, so you need a small amount of ETH to pay gas whether you are swapping for WBTC or minting it through the official route. Without ETH the transaction simply cannot be signed."}}, {"@type": "Question", "name": "Can I convert WBTC back to BTC?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. You can redeem WBTC through the official burn-and-release process, which sends native BTC back to a Bitcoin address, or swap WBTC for a BTC-pegged asset on a supported DEX route. Both paths keep the one-to-one backing intact."}}, {"@type": "Question", "name": "Do I need an account to get WBTC?", "acceptedAnswer": {"@type": "Answer", "text": "To swap for WBTC on a DEX, no — you connect a self-custody wallet and sign the transaction yourself. The official mint path involves a verified merchant, which does require identity checks before the first mint."}}, {"@type": "Question", "name": "What happens if my transaction fails?", "acceptedAnswer": {"@type": "Answer", "text": "A failed on-chain transaction reverts and your assets stay exactly where they were, though the gas spent attempting it is not refunded. Nothing is minted or swapped until a transaction actually confirms."}}, {"@type": "Question", "name": "Why use a WBTC Bridge instead of just holding BTC?", "acceptedAnswer": {"@type": "Answer", "text": "Native BTC cannot interact with Ethereum smart contracts directly. This process converts that value into an ERC-20 that can be used as collateral, supply liquidity or earn yield across Ethereum DeFi, while remaining redeemable back to BTC whenever you want to exit. Holding both forms side by side is common — idle BTC in cold storage, working WBTC in DeFi."}}, {"@type": "Question", "name": "Is swapping for WBTC the same as minting it?", "acceptedAnswer": {"@type": "Answer", "text": "No. Swapping trades an existing on-chain asset for already-minted WBTC through a DEX in one transaction. Minting is the process that creates new WBTC against BTC through the official merchant-and-custodian flow, which is what keeps the overall supply backed one-to-one."}}]}]}</script>
 <style>
 :root{--bg:#FFFDFB;--surface:#FFFFFF;--text:#17141A;--muted:#6B6570;--accent:#F0922B;--accent-ink:#1A1200;--radius:14px;--display:"Space Grotesk";--body:"Inter"}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:2rem}
-body{margin:0;background:var(--bg);color:var(--text);font:400 1rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1rem/1.7 var(--body);-webkit-font-smoothing:antialiased}
 ::selection{background:var(--accent);color:var(--accent-ink)}
-a{color:inherit;text-underline-offset:.25em}
+a{color:var(--text);text-underline-offset:.22em;text-decoration-thickness:1px}
 a:hover{color:var(--accent)}
-button,input,select,textarea{font:inherit}
-input,select{color:var(--text);accent-color:var(--accent)}
+a,input,summary{touch-action:manipulation}
 :focus-visible{outline:3px solid var(--accent);outline-offset:5px}
 img,svg{max-width:100%;vertical-align:middle}
-svg{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-.c02b7a7{width:min(1200px,calc(100% - 4rem));margin-inline:auto}
-.cdf8916{min-height:92px;display:flex;align-items:center;justify-content:space-between;gap:2rem;border-bottom:1px solid color-mix(in srgb,var(--text) 12%,transparent)}
-.c243fa1{display:inline-flex;align-items:center;gap:.7rem;text-decoration:none;font:650 1.3rem/1.2 var(--display);letter-spacing:-.04em}
-.c1991ab{display:grid;place-items:center;width:36px;height:36px;background:var(--accent);color:var(--accent-ink);border-radius:calc(var(--radius)*.5)}
-.c1991ab svg{width:23px;height:23px}
-.c9976a6{display:flex;align-items:center;gap:1.8rem;font-size:.875rem;font-weight:550}
-.c9976a6 a{text-decoration:none}
-.c9976a6 .c86f534{padding:.6rem 1rem;border:1px solid color-mix(in srgb,var(--text) 18%,transparent);border-radius:var(--radius)}
-.c64ae44{padding-block:1.5rem;font-size:.8rem;color:var(--muted);overflow-wrap:anywhere}
-.ca587e7{display:flex;flex-wrap:wrap;align-items:center;gap:.55rem;margin:0;padding:0;list-style:none}
-.ca587e7 a{text-decoration:none}
-.ca587e7 [aria-current="page"]{color:var(--text)}
-.c555ced{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-items:center;gap:clamp(2rem,6vw,6rem);padding-block:2.5rem 5.5rem}
-.c9056d9{min-width:0}
-.c256482{display:inline-flex;align-items:center;gap:.55rem;margin:0 0 1.25rem;color:var(--muted);font-size:.875rem}
-.c256482::before{content:"";width:.5rem;height:.5rem;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px color-mix(in srgb,var(--accent) 12%,transparent)}
-h1{margin:0;font:550 clamp(2.65rem,5vw,4.75rem)/1.06 var(--display);letter-spacing:-.055em;overflow-wrap:anywhere;text-wrap:balance}
-h1 em{color:var(--accent);font-style:normal}
-.c30d7a4{max-width:36rem;margin:1.6rem 0 2rem;color:var(--muted);font-size:1.1rem;line-height:1.8}
-.ca49b34{display:inline-flex;justify-content:center;align-items:center;gap:1.4rem;min-height:54px;padding:.9rem 1.4rem;background:linear-gradient(135deg,var(--accent),color-mix(in srgb,var(--accent) 86%,var(--text)));color:var(--accent-ink);border:1px solid color-mix(in srgb,var(--accent-ink) 12%,transparent);border-radius:var(--radius);font-weight:650;text-decoration:none;box-shadow:0 8px 22px color-mix(in srgb,var(--accent) 20%,transparent);transition:transform .2s,box-shadow .2s}
-.ca49b34 svg{width:20px;height:20px;flex:none}
-.ca49b34:hover{color:var(--accent-ink);transform:translateY(-2px);box-shadow:0 12px 26px color-mix(in srgb,var(--accent) 28%,transparent)}
-.c01594f{display:flex;align-items:center;gap:.5rem;margin:1.2rem 0 0;color:var(--muted);font-size:.8rem}
-.c01594f svg{width:16px;height:16px;color:var(--accent)}
-.c88b7b3{position:relative;min-width:0;padding:12px;border:1px solid color-mix(in srgb,var(--accent) 18%,transparent);border-radius:calc(var(--radius) + 12px);background:linear-gradient(145deg,color-mix(in srgb,var(--accent) 13%,var(--bg)),color-mix(in srgb,var(--surface) 70%,var(--bg)));box-shadow:0 28px 64px -28px color-mix(in srgb,var(--text) 24%,transparent)}
-.c68f8d9{padding:clamp(1.25rem,3vw,2rem);background:var(--surface);border:1px solid color-mix(in srgb,var(--text) 9%,transparent);border-radius:var(--radius)}
-.c458b16{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:1.7rem}
-.c458b16 h2{margin:0;font:600 1.2rem/1.3 var(--display);letter-spacing:-.025em}
-.c703487{display:inline-flex;align-items:center;gap:.4rem;color:var(--muted);font-size:.72rem;white-space:nowrap}
-.c703487::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent)}
-.ce9c996{display:grid;grid-template-columns:minmax(0,1fr) 36px minmax(0,1fr);align-items:center;gap:.7rem;margin-bottom:1.7rem}
-.c0ee9bf{min-width:0;padding:.9rem 1rem;background:color-mix(in srgb,var(--bg) 70%,var(--surface));border:1px solid color-mix(in srgb,var(--text) 9%,transparent);border-radius:calc(var(--radius)*.7)}
-.cd51db9{display:block;margin-bottom:.65rem;color:var(--muted);font-size:.75rem}
-.c88e84f{display:flex;align-items:center;gap:.5rem;min-height:32px;font:600 .95rem/1.3 var(--display);overflow-wrap:anywhere}
-.c88e84f img,.c88e84f svg{width:auto;height:32px;max-width:100%;object-fit:contain}
-.c80ed72{display:grid;place-items:center;width:36px;height:36px;border:1px solid color-mix(in srgb,var(--accent) 24%,transparent);border-radius:50%;color:var(--accent)}
-.c80ed72 svg{width:18px;height:18px}
-.c9e32d6{display:block;margin-bottom:.55rem;font-size:.8rem;font-weight:550}
-.c24dc42{display:flex;align-items:center;gap:.5rem;padding:.7rem 1rem;border:1px solid color-mix(in srgb,var(--text) 19%,transparent);border-radius:calc(var(--radius)*.7);background:var(--bg);transition:border-color .2s}
-.c24dc42:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 13%,transparent)}
-.c24dc42 input{width:100%;min-width:0;padding:0;border:0;border-radius:0;background:var(--bg);font:550 1.9rem/1.5 var(--display);font-variant-numeric:tabular-nums}
-.c24dc42 input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.c24dc42 span{color:var(--muted);font-size:.8rem}
-.c6a68bb{margin:.5rem 0 1.2rem;color:var(--muted);font-size:.73rem}
-.c92d15d{margin:-.65rem 0 1rem;color:var(--text);font-size:.8rem}
-.c29d505{padding:1.2rem;border:1px solid color-mix(in srgb,var(--accent) 18%,transparent);border-radius:calc(var(--radius)*.7);background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 8%,var(--surface)),var(--surface))}
-.cce0346{display:block;color:var(--muted);font-size:.8rem}
-.c8c5424{display:block;margin:.35rem 0 1.2rem;font:600 clamp(1.65rem,3vw,2.25rem)/1.25 var(--display);letter-spacing:-.035em;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
-.c8c5424 small{color:var(--muted);font:400 .8rem/1.5 var(--body);letter-spacing:0}
-.c5ef9c6{display:grid;grid-template-columns:1fr 1fr;gap:1rem;padding-top:1rem;border-top:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.c044f9a{display:block;color:var(--muted);font-size:.72rem}
-.cd166e0{display:block;margin-top:.2rem;font-size:.9rem;font-weight:600;font-variant-numeric:tabular-nums}
-.c68f8d9 .ca49b34{width:100%;margin-top:1.3rem;justify-content:space-between}
-.c9ce8af{margin-top:1rem;color:var(--muted);font-size:.73rem}
-.c9ce8af summary{cursor:pointer;width:fit-content;text-underline-offset:.2em}
-.c9ce8af summary:hover{color:var(--text)}
-.c9ce8af p{margin:.7rem 0 0}
-.cb11f62{margin:0;font:550 1.75rem/1.2 var(--display);letter-spacing:-.035em}
-.c1f0c7a{padding:2rem 2.25rem;background:var(--surface);border:1px solid color-mix(in srgb,var(--text) 10%,transparent);border-radius:var(--radius)}
-.c1f0c7a .cb11f62{margin-bottom:1.5rem}
-.c8abb6f{max-width:100%;overflow-x:auto;overscroll-behavior-inline:contain}
-.c4728af{width:100%;border-collapse:collapse;text-align:left;font-size:.9rem}
-.c4728af caption{text-align:left;margin-bottom:1rem;color:var(--muted)}
-.c4728af th,.c4728af td{padding:1rem 1.1rem;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent);vertical-align:top;overflow-wrap:anywhere}
-.c4728af th{color:var(--muted);font-weight:500}
-.c4728af thead{background:color-mix(in srgb,var(--accent) 7%,var(--surface))}
-.c4728af thead th{color:var(--text);font-weight:600}
-.c4728af tbody tr:last-child>*{border-bottom:0}
-.c4728af tbody tr:hover{background:color-mix(in srgb,var(--accent) 4%,var(--surface))}
-.c504433{max-width:820px;margin:4.5rem auto}
-.c4b0849{margin:0 0 3.5rem;scroll-margin-top:2rem}
-.ca58ec7{margin:0 0 1.25rem;font:550 clamp(1.65rem,3vw,2.25rem)/1.2 var(--display);letter-spacing:-.035em;text-wrap:balance}
-.c8397b5{color:var(--muted);font-size:1.025rem;line-height:1.9;overflow-wrap:anywhere}
-.c8397b5 p{margin:0 0 1.25rem}
-.c8397b5 h3{margin:1.75rem 0 .75rem;color:var(--text);font:600 1.25rem/1.35 var(--display);letter-spacing:-.02em}
-.c8397b5 strong{color:var(--text);font-weight:600}
-.c8397b5 a,.c85aef6 a,.cf180a2 a{color:var(--accent);text-decoration-thickness:1px}
-.c8397b5 ul,.c8397b5 ol,.c85aef6 ul,.c85aef6 ol{padding-left:1.4rem}
-.c8397b5 li+li{margin-top:.55rem}
-.c8397b5 li::marker{color:var(--accent)}
-.c8397b5 blockquote{margin:1.5rem 0;padding:1rem 1.5rem;border-left:3px solid var(--accent);background:var(--surface);border-radius:0 var(--radius) var(--radius) 0;color:var(--text)}
-.c8397b5 img{height:auto;border-radius:var(--radius)}
-.c8397b5 table{width:100%;border-collapse:collapse}
-.c8397b5 td,.c8397b5 th{padding:.75rem;border-bottom:1px solid color-mix(in srgb,var(--text) 12%,transparent);text-align:left}
-.ceb8494{margin:.8rem 0;padding:0 1.4rem;border:1px solid color-mix(in srgb,var(--text) 12%,transparent);border-radius:var(--radius);background:var(--surface)}
-.cad59e3{display:flex;justify-content:space-between;align-items:center;gap:1.5rem;min-height:72px;padding:1.2rem 0;cursor:pointer;list-style:none;font:550 1.05rem/1.5 var(--display)}
-.cad59e3::-webkit-details-marker{display:none}
-.cad59e3::after{content:"+";flex:none;display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:color-mix(in srgb,var(--accent) 10%,var(--surface));color:var(--accent);font:400 1.25rem/1 var(--body)}
-.ceb8494[open]{border-color:color-mix(in srgb,var(--accent) 40%,transparent)}
-.ceb8494[open]>.cad59e3::after{content:"−"}
-.c85aef6{padding:0 2.8rem 1.3rem 0;color:var(--muted);line-height:1.85;overflow-wrap:anywhere}
-.c85aef6 p{margin:.25rem 0 .75rem}
-.c420cb0{display:grid;grid-template-columns:1fr 2fr;gap:2rem;padding:2.5rem 0;border-top:1px solid color-mix(in srgb,var(--text) 12%,transparent)}
-.c29289a{margin:0;padding:0;list-style:none}
-.cf180a2{padding:.7rem 0;border-bottom:1px solid color-mix(in srgb,var(--text) 8%,transparent);color:var(--muted);font-size:.875rem;overflow-wrap:anywhere}
-.cf180a2:first-child{padding-top:0}
-.cf180a2:last-child{border-bottom:0}
-.cbb4d29{display:flex;justify-content:space-between;align-items:center;gap:1.5rem;padding-block:1.75rem 2.5rem;border-top:1px solid color-mix(in srgb,var(--text) 12%,transparent);color:var(--muted);font-size:.8rem}
-.cf9f6a4{color:var(--text);font:600 1rem/1.3 var(--display);letter-spacing:-.025em}
-.c68f6d0{margin:0}
-@media(min-width:1100px){.c88b7b3{transform:rotate(1deg)}.c68f8d9{transform:rotate(-1deg)}}
-@media(max-width:850px){.c555ced{grid-template-columns:1fr;gap:2.5rem;padding-block:1.5rem 3.5rem}.c9056d9{max-width:650px}.c88b7b3{width:100%;max-width:580px;justify-self:center}.c504433{margin-block:3.5rem}.c9976a6{gap:1rem}h1{max-width:14ch}}
-@media(max-width:540px){.c02b7a7{width:calc(100% - 2rem)}.cdf8916{min-height:76px;gap:1rem}.c9976a6>a:not(.c86f534){display:none}.c9976a6 .c86f534{padding:.5rem .8rem}.c64ae44{padding-block:1.1rem}.c555ced{padding-top:1rem}.c9056d9>.ca49b34{width:100%;justify-content:space-between}.c30d7a4{font-size:1rem}.c88b7b3{padding:7px;border-radius:calc(var(--radius) + 7px)}.c68f8d9{padding:1.1rem}.ce9c996{gap:.4rem;grid-template-columns:minmax(0,1fr) 30px minmax(0,1fr)}.c80ed72{width:30px;height:30px}.c0ee9bf{padding:.8rem}.c1f0c7a{padding:1.4rem 1rem}.c4728af th,.c4728af td{padding:.85rem .65rem}.ceb8494{padding-inline:1rem}.c85aef6{padding-right:0}.c420cb0{grid-template-columns:1fr;gap:1.4rem}.cbb4d29{align-items:flex-start;flex-direction:column;gap:.65rem}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}.ca49b34:hover{transform:none}}
+img{height:auto}
+h1,h2,h3,h4,h5,h6{font-family:var(--display);line-height:1.15;letter-spacing:-.035em;text-wrap:balance}
+p{margin:0 0 1.25rem}
+.c98ea84{width:min(1180px,calc(100% - 4rem));margin-inline:auto}
+.c3c7a42{position:absolute;top:1rem;left:1rem;transform:translateY(-180%);z-index:5;padding:.65rem 1rem;background:var(--surface);border-radius:var(--radius)}
+.c3c7a42:focus{transform:translateY(0)}
+.cb32cda{min-height:96px;display:flex;align-items:center;justify-content:space-between;gap:2rem;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
+.c560be7{display:flex;align-items:center;gap:.75rem;font:650 1.15rem/1.2 var(--display);letter-spacing:-.035em}
+.cdb1205{display:grid;place-items:center;width:38px;height:38px;background:var(--accent);color:var(--accent-ink);border-radius:var(--radius)}
+.c3c459d{width:20px;height:20px;fill:none;stroke:var(--text);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.cdb1205 .c3c459d,.c31505d .c3c459d{stroke:var(--accent-ink)}
+.c1c640f{display:flex;align-items:center;gap:1.75rem;font-size:.875rem;font-weight:550}
+.c1c640f a{text-decoration:none}
+.c1c640f .c99b9f3{padding:.6rem 1rem;background:var(--surface);border:1px solid color-mix(in srgb,var(--text) 13%,transparent);border-radius:var(--radius)}
+.c6b6b42{padding-block:1.6rem .5rem;font-size:.8rem;color:var(--muted);overflow-wrap:anywhere}
+.cdf8a91{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;list-style:none;padding:0;margin:0;color:var(--muted)}
+.cdf8a91 a{color:var(--muted);text-decoration:none}
+.cdf8a91 a:hover{color:var(--text);text-decoration:underline}
+.c357f16{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:clamp(2rem,6vw,6rem);align-items:center;padding-block:3.5rem 5.5rem}
+.c3a8436{min-width:0}
+.ccfc404{display:flex;align-items:center;gap:.6rem;margin-bottom:1.4rem;color:var(--muted);font-size:.875rem}
+.ccfc404::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px color-mix(in srgb,var(--accent) 12%,transparent)}
+h1{font-size:clamp(2.65rem,4.7vw,4.7rem);font-weight:600;margin:0 0 1.5rem;overflow-wrap:anywhere}
+h1 em{font-style:normal;color:var(--accent)}
+.c668b40{font-size:1.075rem;line-height:1.85;color:var(--muted);max-width:48ch;margin-bottom:2rem}
+.c31505d{display:inline-flex;align-items:center;justify-content:center;gap:1.4rem;min-height:52px;padding:.85rem 1.4rem;background:linear-gradient(120deg,color-mix(in srgb,var(--accent) 88%,var(--surface)),var(--accent));color:var(--accent-ink);font-weight:650;font-size:.9rem;text-decoration:none;border:1px solid color-mix(in srgb,var(--accent) 80%,var(--text));border-radius:var(--radius);box-shadow:0 5px 14px color-mix(in srgb,var(--accent) 18%,transparent);transition:transform .18s ease,box-shadow .18s ease}
+.c31505d:hover{color:var(--accent-ink);transform:translateY(-2px);box-shadow:0 9px 24px color-mix(in srgb,var(--accent) 25%,transparent)}
+.c2e20d1{position:relative;isolation:isolate;min-width:0;background:var(--surface);border:1px solid color-mix(in srgb,var(--text) 10%,transparent);border-radius:var(--radius);box-shadow:0 24px 65px -28px color-mix(in srgb,var(--text) 28%,transparent),0 3px 10px color-mix(in srgb,var(--text) 4%,transparent)}
+.c2e20d1::before{content:"";position:absolute;inset:-1.5rem;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 80% 15%,color-mix(in srgb,var(--accent) 13%,transparent),color-mix(in srgb,var(--accent) 0%,transparent) 68%);border-radius:var(--radius)}
+.c60885d{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.5rem 1.75rem;border-bottom:1px solid color-mix(in srgb,var(--text) 9%,transparent)}
+.c60885d h2{font-size:1.2rem;font-weight:600;margin:0}
+.c287422{font-size:.72rem;line-height:1.4;color:var(--muted);padding:.35rem .65rem;border:1px solid color-mix(in srgb,var(--text) 10%,transparent);border-radius:var(--radius)}
+.cc2cdd9{padding:1.6rem 1.75rem 1.75rem}
+.c0714b4{display:grid;grid-template-columns:minmax(0,1fr) 36px minmax(0,1fr);align-items:center;gap:.6rem;margin-bottom:1.5rem}
+.c0c3e1e{min-width:0;display:flex;align-items:center;gap:.75rem;padding:.85rem;background:var(--bg);border:1px solid color-mix(in srgb,var(--text) 7%,transparent);border-radius:var(--radius)}
+.c4d28b8{font-size:.75rem;color:var(--muted)}
+.c4511eb{display:flex;align-items:center;justify-content:center;min-width:0;overflow-wrap:anywhere;line-height:1.25;font-size:.8rem}
+.c4511eb img,.c4511eb svg{width:32px;max-height:32px;object-fit:contain}
+.c2ddd18{display:grid;place-items:center;height:36px;border:1px solid color-mix(in srgb,var(--text) 10%,transparent);border-radius:50%}
+.c97cffe{display:block;margin-bottom:.5rem;font-size:.825rem;font-weight:550}
+.c758044{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin:0 0 1.3rem}
+.cb05f34{min-width:0}
+.c90658c{position:relative}
+.c90658c::after{content:"";position:absolute;right:.9rem;top:50%;width:.5rem;height:.5rem;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:translateY(-70%) rotate(45deg);pointer-events:none}
+.c3256c4{width:100%;padding:.7rem 2rem .7rem .85rem;background:var(--bg);color:var(--text);border:1px solid color-mix(in srgb,var(--text) 18%,transparent);border-radius:var(--radius);font:550 .9rem/1.3 var(--body);appearance:none;-webkit-appearance:none;cursor:pointer}
+.c3256c4:focus-visible{border-color:var(--accent);outline:none;box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 13%,transparent)}
+.c777e31{display:flex;align-items:center;gap:.5rem;padding:.8rem 1rem;background:var(--bg);border:1px solid color-mix(in srgb,var(--text) 18%,transparent);border-radius:var(--radius)}
+.c777e31:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 13%,transparent)}
+.c777e31 input{width:100%;min-width:0;padding:0;border:0;outline:none;background:var(--bg);color:var(--text);font:550 2rem/1.3 var(--display);font-variant-numeric:tabular-nums}
+.c777e31 input::placeholder{color:var(--muted)}
+.c2469fc{font-size:.8rem;color:var(--muted)}
+.c203b58{font-size:.72rem;line-height:1.6;color:var(--muted);margin:.6rem 0 1.3rem}
+.c3cb1b4{font-size:.8rem;color:var(--text);margin:.6rem 0}
+[hidden]{display:none!important}
+.c8146ec{padding:1.2rem;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 10%,var(--surface)),color-mix(in srgb,var(--accent) 3%,var(--surface)));border:1px solid color-mix(in srgb,var(--accent) 18%,transparent);border-radius:var(--radius)}
+.c24e8e6{display:block;color:var(--muted);font-size:.78rem;margin-bottom:.3rem}
+.cdc1ae1{display:block;font:600 clamp(1.9rem,3vw,2.6rem)/1.2 var(--display);letter-spacing:-.045em;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.c600e5d{font:400 .8rem/1.5 var(--body);letter-spacing:0;color:var(--muted)}
+.c829429{display:grid;gap:.6rem;margin:1rem 0 0;padding-top:.9rem;border-top:1px solid color-mix(in srgb,var(--text) 10%,transparent);font-size:.8rem}
+.c829429 div{display:flex;justify-content:space-between;gap:1rem}
+.c829429 dt{color:var(--muted)}
+.c829429 dd{margin:0;text-align:right;font-weight:550;font-variant-numeric:tabular-nums}
+.c2e20d1 .c31505d{display:flex;width:100%;margin-top:1.25rem;justify-content:space-between}
+.c0fca4d{margin-top:1rem;color:var(--muted);font-size:.75rem}
+.c0fca4d summary{cursor:pointer;text-underline-offset:.2em}
+.c0fca4d summary:hover{color:var(--text)}
+.c0fca4d p{margin:.7rem 0 0;line-height:1.7}
+.cdc8112{padding:2rem 2.25rem;background:var(--surface);border:1px solid color-mix(in srgb,var(--text) 10%,transparent);border-radius:var(--radius)}
+.cc45530{font-size:1.4rem;font-weight:600;margin:0 0 1.4rem}
+.c6da6e4{overflow-x:auto}
+.c7759d8{width:100%;border-collapse:collapse;text-align:left;font-size:.9rem}
+.c7759d8 caption{text-align:left;color:var(--muted);padding-bottom:1rem}
+.c7759d8 th,.c7759d8 td{padding:1rem 1.1rem;border-bottom:1px solid color-mix(in srgb,var(--text) 9%,transparent);vertical-align:top;overflow-wrap:anywhere}
+.c7759d8 th{font-weight:550;color:var(--muted)}
+.c7759d8 th:first-child,.c7759d8 td:first-child{padding-left:0}
+.c7759d8 th:last-child,.c7759d8 td:last-child{padding-right:0}
+.c7759d8 tbody tr:last-child>*{border-bottom:0}
+.c410150{width:min(800px,100%);margin:4.5rem auto}
+.c0b7e19{margin-bottom:3.25rem;scroll-margin-top:2rem}
+.c477543{font:600 clamp(1.65rem,3vw,2.3rem)/1.2 var(--display);letter-spacing:-.035em;margin:0 0 1.25rem;text-wrap:balance}
+.c660ea4{color:var(--muted);font:400 1rem/1.85 var(--body);overflow-wrap:anywhere}
+.c660ea4 h3,.c660ea4 h4{color:var(--text);margin:1.8rem 0 .8rem}
+.c660ea4 strong{color:var(--text);font-weight:600}
+.c660ea4 a,.cbeb66a a,.c27ee14 a{text-decoration-color:color-mix(in srgb,var(--accent) 60%,var(--text))}
+.c660ea4 ul,.c660ea4 ol,.cbeb66a ul,.cbeb66a ol{padding-left:1.4rem}
+.c660ea4 li+li,.cbeb66a li+li{margin-top:.5rem}
+.c660ea4 blockquote{margin:1.8rem 0;padding:.3rem 0 .3rem 1.25rem;border-left:3px solid var(--accent);color:var(--text)}
+.c660ea4 blockquote p:last-child{margin-bottom:0}
+.c660ea4 table{display:block;max-width:100%;overflow-x:auto;border-collapse:collapse}
+.c660ea4 th,.c660ea4 td{padding:.75rem;border:1px solid color-mix(in srgb,var(--text) 12%,transparent);text-align:left}
+.c660ea4 code,.c660ea4 pre{font-family:var(--body);background:var(--surface);border-radius:var(--radius)}
+.c660ea4 pre{padding:1rem;overflow-x:auto}
+.c237241{margin:.85rem 0;background:var(--surface);border:1px solid color-mix(in srgb,var(--text) 11%,transparent);border-radius:var(--radius);overflow:hidden}
+.c4b9708{position:relative;list-style:none;cursor:pointer;padding:1.3rem 3.8rem 1.3rem 1.4rem;font:550 1.05rem/1.5 var(--display);color:var(--text)}
+.c4b9708::-webkit-details-marker{display:none}
+.c4b9708::after{content:"+";position:absolute;right:1.4rem;top:1.25rem;font:400 1.4rem/1.2 var(--body);color:var(--muted)}
+.c237241[open]>.c4b9708::after{content:"−"}
+.c237241[open]{border-color:color-mix(in srgb,var(--accent) 40%,transparent)}
+.c4b9708:focus-visible{outline-offset:-5px}
+.cbeb66a{padding:0 1.4rem 1.4rem;color:var(--muted);font-size:.95rem;line-height:1.8;overflow-wrap:anywhere}
+.cbeb66a p:last-child{margin-bottom:0}
+.c09f713{padding:2rem 0 3rem;border-top:1px solid color-mix(in srgb,var(--text) 12%,transparent)}
+.cc56874{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem 2rem;list-style:none;padding:0;margin:0}
+.c27ee14{font-size:.85rem;color:var(--muted);overflow-wrap:anywhere;padding:.65rem 0}
+.cb213d9{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding-block:1.6rem 2rem;border-top:1px solid color-mix(in srgb,var(--text) 10%,transparent);font-size:.8rem;color:var(--muted)}
+.cb213d9 p{margin:0}
+.cb213d9 a{color:var(--muted)}
+@media(min-width:1500px){.c357f16{padding-block:5rem 6rem}}
+@media(max-width:900px){.c357f16{gap:2rem}.c60885d,.cc2cdd9{padding:1.25rem}.c0c3e1e{padding:.65rem;gap:.5rem}.c1c640f{gap:1rem}}
+@media(max-width:760px){.c98ea84{width:calc(100% - 2.5rem)}.cb32cda{min-height:80px;gap:1rem}.c1c640f .c855673{display:none}.c357f16{grid-template-columns:1fr;padding-block:2.5rem 3rem;gap:2.5rem}.c3a8436{max-width:600px}h1{font-size:clamp(2.6rem,9vw,4rem)}.c668b40{max-width:55ch}.c2e20d1{width:100%;max-width:520px;justify-self:center}.c2e20d1::before{inset:-.75rem}.cdc8112{padding:1.5rem}.c410150{margin-block:3rem}.cc56874{grid-template-columns:1fr;gap:.25rem}.cb213d9{align-items:flex-start;flex-direction:column;gap:.6rem}}
+@media(max-width:380px){.c98ea84{width:calc(100% - 2rem)}.c560be7{font-size:1rem;gap:.5rem}.cdb1205{width:30px;height:30px}.c1c640f .c99b9f3{padding:.55rem .7rem}.c60885d,.cc2cdd9{padding:1rem}.c0714b4{gap:.4rem;grid-template-columns:minmax(0,1fr) 28px minmax(0,1fr)}.c2ddd18{height:28px}.c0c3e1e{flex-direction:column;align-items:flex-start}.cdc8112{padding:1.1rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.c31505d{transition:none}}
 </style>
 </head>
 <body>
-<div class="c02b7a7">
-<nav class="cdf8916" aria-label="Main navigation">
-<a class="c243fa1" href="#hero"><span class="c1991ab" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 8h15m-4-4 4 4-4 4M20 16H5m4-4-4 4 4 4"/></svg></span>Compare</a>
-<div class="c9976a6"><a href="#facts">Key facts</a><a href="#guide">Guide</a><a href="#sources">Sources</a><a class="c86f534" href="dashboard/">Open app ↗</a></div>
+<a class="c3c7a42" href="#content">Skip to content</a>
+<div class="c98ea84">
+<nav class="cb32cda" aria-label="Primary navigation">
+<div class="c560be7"><span class="cdb1205" aria-hidden="true"><svg class="c3c459d" viewBox="0 0 24 24"><path d="M5 8h14m-4-4 4 4-4 4M19 16H5m4-4-4 4 4 4"/></svg></span>Transfer guide</div>
+<div class="c1c640f"><a class="c855673" href="#key-facts">Key facts</a><a class="c855673" href="#sources">Sources</a><a class="c99b9f3" href="dashboard/">Open app <span aria-hidden="true">↗</span></a></div>
 </nav>
-<div class="c64ae44"><nav class="ca587e7" aria-label="Breadcrumb"><a href="dashboard/">Home</a> <span>/</span> <span>Bridges</span> <span>/</span> <span>WBTC Bridge</span></nav></div>
-<section class="c555ced" id="hero" aria-labelledby="hero-title">
-<div class="c9056d9">
-<p class="c256482">Compare your transfer</p>
-<h1 id="hero-title">WBTC <em>Bridge</em>.</h1>
-<p class="c30d7a4">A WBTC Bridge brings Bitcoin value onto Ethereum as Wrapped Bitcoin (WBTC), an ERC-20 token backed one-to-one by BTC so it can be used across Ethereum DeFi. You review the route, the fee and the amount received before you sign, pay gas in ETH, and your funds stay in your own wallet the whole time.</p>
-<a class="ca49b34" href="dashboard/">Open app <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
-<p class="c01594f"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>Explore fees and timing below</p>
+<div class="c6b6b42"><nav class="cdf8a91" aria-label="Breadcrumb"><a href="dashboard/">Home</a> <span>/</span> <span>Bridges</span> <span>/</span> <span>WBTC Bridge</span></nav></div>
+<header class="c357f16">
+<div class="c3a8436">
+<p class="ccfc404">Plan your transfer</p>
+<h1>WBTC <em>Bridge</em>.</h1>
+<p class="c668b40">A WBTC Bridge brings Bitcoin value onto Ethereum as Wrapped Bitcoin (WBTC), an ERC-20 token backed one-to-one by BTC so it can be used across Ethereum DeFi. You review the route, the fee and the amount received before you sign, pay gas in ETH, and your funds stay in your own wallet the whole time.</p>
+<a class="c31505d" href="dashboard/">Start a transfer <svg class="c3c459d" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a>
 </div>
-<aside class="c88b7b3" aria-labelledby="estimator-title">
-<div class="c68f8d9">
-<div class="c458b16"><h2 id="estimator-title">Transfer estimator</h2><span class="c703487">Auto-updating</span></div>
-<div class="ce9c996">
-<div class="c0ee9bf"><span class="cd51db9">From</span><div class="c88e84f"><img src="assets/tokens/btc.svg" alt="Bitcoin" width="28" height="28"></div></div>
-<span class="c80ed72" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></span>
-<div class="c0ee9bf"><span class="cd51db9">To</span><div class="c88e84f"><img src="assets/tokens/eth.svg" alt="Ethereum" width="28" height="28"></div></div>
+<aside class="c2e20d1" aria-labelledby="estimator-title">
+<div class="c60885d"><h2 id="estimator-title">Transfer estimator</h2><span class="c287422">Fee &amp; time</span></div>
+<div class="cc2cdd9">
+<div class="c0714b4">
+<div class="c0c3e1e"><span class="c4d28b8">From</span><div class="c4511eb"><img src="assets/tokens/btc.svg" alt="Bitcoin" width="28" height="28"></div></div>
+<span class="c2ddd18" aria-hidden="true"><svg class="c3c459d" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></svg></span>
+<div class="c0c3e1e"><span class="c4d28b8">To</span><div class="c4511eb"><img src="assets/tokens/eth.svg" alt="Ethereum" width="28" height="28"></div></div>
 </div>
-<label class="c9e32d6" for="amount">Amount to send</label>
-<div class="c24dc42"><input id="amount" type="number" inputmode="decimal" min="1" max="1000000000" step="0.01" value="1000" aria-describedby="amount-hint amount-error"><span>units</span></div>
-<p class="c6a68bb" id="amount-hint">Enter 1–1,000,000,000 units, up to 2 decimal places.</p>
-<p class="c92d15d" id="amount-error" hidden></p>
-<div class="c29d505" role="status" aria-live="polite" aria-atomic="true">
-<span class="cce0346">Estimated amount received</span>
-<output class="c8c5424" id="received" for="amount">—</output>
-<div class="c5ef9c6">
-<div><span class="c044f9a">Estimated fee</span><output class="cd166e0" id="fee" for="amount">—</output></div>
-<div><span class="c044f9a">Estimated time</span><output class="cd166e0" id="time" for="amount">—</output></div>
+<label class="c97cffe" for="amount">Amount to send</label>
+<div class="c777e31"><input id="amount" type="text" inputmode="decimal" value="1000" maxlength="20" autocomplete="off" spellcheck="false" aria-describedby="amount-help amount-error"><span class="c2469fc">units</span></div>
+<p class="c203b58" id="amount-help">Enter 1–1,000,000 units. Use a point or comma for decimals.</p>
+<p class="c3cb1b4" id="amount-error" role="status" hidden></p>
+<div class="c758044">
+<div class="cb05f34"><label class="c97cffe" for="speed">Transfer speed</label><div class="c90658c"><select id="speed" class="c3256c4"><option value="std">Standard</option><option value="fast">Fast</option><option value="prio">Priority</option></select></div></div>
+<div class="cb05f34"><label class="c97cffe" for="load">Network load</label><div class="c90658c"><select id="load" class="c3256c4"><option value="normal">Normal</option><option value="busy">Busy</option></select></div></div>
 </div>
+<div class="c8146ec" aria-live="polite" aria-atomic="true">
+<span class="c24e8e6">Estimated amount after fee</span>
+<div class="cdc1ae1"><output id="net" for="amount">—</output> <span class="c600e5d">units</span></div>
+<dl class="c829429"><div><dt>Estimated fee</dt><dd><output id="fee" for="amount">—</output></dd></div><div><dt>Estimated time</dt><dd><output id="time" for="amount">—</output></dd></div></dl>
 </div>
-<a class="ca49b34" href="dashboard/">Continue <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
-<details class="c9ce8af"><summary>How the estimate is calculated</summary><p>Fee = 0.5 units + 0.35% of the amount, rounded to 2 decimals. Amount received = amount − fee. Time = 2 minutes + 1 minute per 10,000 units, rounded up.</p></details>
-<noscript><p class="c6a68bb">Enable JavaScript to calculate fees and timing.</p></noscript>
+<a class="c31505d" href="dashboard/">Continue to dashboard <svg class="c3c459d" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a>
+<details class="c0fca4d"><summary>How the estimate is calculated</summary><p>Fee = 0.50 units + 0.25% of the amount, rounded to two decimals. The remaining amount is the input minus the fee. Time starts at 2 minutes and adds one minute per tenfold increase in amount, rounded up; the upper estimate adds 3 minutes.</p></details>
+<noscript><p class="c203b58">Enable JavaScript to calculate the fee and time from your amount.</p></noscript>
 </div>
 </aside>
-</section>
-<section class="c1f0c7a" id="facts" aria-labelledby="facts-title"><h2 class="cb11f62" id="facts-title">Key facts</h2><div class="c8abb6f" role="region" aria-label="Key facts table" tabindex="0"><table class="c4728af"><tbody><tr><th scope="row">What you get</th><td>WBTC — ERC-20 backed 1:1 by BTC</td></tr>
+</header>
+<section class="cdc8112" id="key-facts" aria-labelledby="facts-title"><h2 class="cc45530" id="facts-title">Key facts</h2><div class="c6da6e4"><table class="c7759d8"><tbody><tr><th scope="row">What you get</th><td>WBTC — ERC-20 backed 1:1 by BTC</td></tr>
 <tr><th scope="row">Network</th><td>Ethereum (and other chains)</td></tr>
 <tr><th scope="row">Gas</th><td>Paid in ETH</td></tr>
 <tr><th scope="row">Backing</th><td>Each WBTC redeemable for BTC</td></tr>
+<tr><th scope="row">Routes</th><td>DEX swap or official mint-and-burn</td></tr>
 <tr><th scope="row">Custody</th><td>Self-custody — you hold your keys</td></tr></tbody></table></div></section>
-<main class="c504433" id="guide"><section class="c4b0849"><h2 class="ca58ec7">How a WBTC Bridge works</h2><div class="c8397b5"><strong>BTC is held in reserve and an equal amount of WBTC is issued on Ethereum.</strong> A WBTC Bridge or swap route lets you obtain WBTC against BTC or other assets, review the amount received and the fee, then sign. Each WBTC stays backed one-to-one and can be redeemed back to BTC through the official mint-and-burn process.</div></section>
-<section class="c4b0849"><h2 class="ca58ec7">WBTC Bridge fees and time</h2><div class="c8397b5">Getting WBTC costs the Ethereum gas plus any route or spread; swapping into WBTC through a DEX is a single on-chain transaction, while the official mint path involves a merchant and custodian. The quote shows the amount received before you commit, so there are no surprises at signing.</div></section>
-<section class="c4b0849"><h2 class="ca58ec7">What a WBTC Bridge unlocks on Ethereum</h2><div class="c8397b5">WBTC works across Ethereum DeFi — lending, DEX liquidity, collateral and yield — so Bitcoin value can earn and trade without leaving self-custody. The same wrapped asset also exists on other chains, reachable through supported bridge routes.</div></section>
-<section class="c4b0849"><h2 class="ca58ec7">Is a WBTC Bridge safe to use?</h2><div class="c8397b5">A self-custody route keeps your keys in your wallet, and WBTC is designed to stay fully backed and redeemable. Confirm the token's contract address, the amount received and the approval you grant, prefer a limited approval, and treat any seed-phrase request as fraud.</div></section>
-<section class="c4b0849"><h2 class="ca58ec7">WBTC Bridge: minting vs swapping</h2><div class="c8397b5">You can swap for WBTC on a DEX in one transaction, or mint it through the official merchant-and-custodian process that locks BTC and issues WBTC. Swapping is faster for most users; judge any route by the <strong>net amount received</strong> after gas and fees.</div></section><details class="ceb8494"><summary class="cad59e3">Is WBTC backed by real Bitcoin?</summary><div class="c85aef6">Yes. Each WBTC is backed one-to-one by BTC held in reserve and can be redeemed back to Bitcoin through the official process.</div></details>
-<details class="ceb8494"><summary class="cad59e3">Do I need ETH for a WBTC Bridge?</summary><div class="c85aef6">Yes. WBTC lives on Ethereum (and other chains), so you need a little ETH for gas to acquire or move it.</div></details>
-<details class="ceb8494"><summary class="cad59e3">Can I convert WBTC back to BTC?</summary><div class="c85aef6">Yes, by redeeming it through the official burn process or by swapping WBTC for BTC on a supported route.</div></details>
-<details class="ceb8494"><summary class="cad59e3">Do I need an account to get WBTC?</summary><div class="c85aef6">To swap for WBTC on-chain, no — you connect a self-custody wallet. The official mint path involves a verified merchant.</div></details>
-<details class="ceb8494"><summary class="cad59e3">What happens if my transaction fails?</summary><div class="c85aef6">A failed transaction reverts and you keep your assets, though the gas for the attempt is spent.</div></details></main>
-<section class="c420cb0" id="sources" aria-labelledby="sources-title"><h2 class="cb11f62" id="sources-title">Sources</h2><div><ul class="c29289a"><li><a class="cf180a2" href="https://wbtc.network/" rel="nofollow noopener" target="_blank">Wrapped Bitcoin (WBTC) — official site</a></li>
-<li><a class="cf180a2" href="https://en.wikipedia.org/wiki/Wrapped_bitcoin" rel="nofollow noopener" target="_blank">Wrapped Bitcoin on Wikipedia</a></li>
-<li><a class="cf180a2" href="https://etherscan.io/" rel="nofollow noopener" target="_blank">Etherscan token explorer</a></li></ul></div></section>
-<footer class="cbb4d29"><span class="cf9f6a4">Compare with clarity.</span><p class="c68f6d0">Updated Oct 09, 2026</p></footer>
+<main class="c410150" id="content" tabindex="-1">
+<section class="c0b7e19"><h2 class="c477543">How a WBTC Bridge Works</h2><div class="c660ea4"><strong>A WBTC Bridge is the route that turns BTC into WBTC, an ERC-20 token held one-to-one against Bitcoin reserved on the Bitcoin chain, so the value can move and work inside Ethereum DeFi.</strong> Nothing about Bitcoin itself moves to Ethereum — BTC cannot run as an ERC-20 — so the bridge instead locks real BTC with a custodian and issues an equal amount of WBTC to your Ethereum address. Burn the WBTC later and the same amount of BTC is released back. Whichever path you use, a WBTC Bridge interface shows the amount you will receive, the fee, and the destination address before you ever sign.<h3>Mint and burn: the official path</h3>The canonical WBTC Bridge mechanism runs through a merchant and a custodian. A verified merchant takes in your BTC, the custodian mints the matching WBTC on Ethereum, and the merchant sends it to your wallet. Redeeming reverses the process: WBTC is burned and BTC is released. This path keeps the 1:1 backing exact and is the reference route for large amounts.<h3>Swapping: the fast path</h3>Most people never touch the mint-and-burn flow directly. Instead they already hold BTC exposure on an exchange or a wrapped form on another chain, move it to Ethereum through a supported route, and swap into WBTC on a DEX in a single transaction. A swap-based route settles in minutes and skips any merchant step, at the cost of a small DEX spread instead of a mint fee. For everyday amounts this is the path most wallets default to, because it needs no account and no waiting period.</div></section>
+<section class="c0b7e19"><h2 class="c477543">WBTC Bridge Fees and Time</h2><div class="c660ea4">What a WBTC Bridge costs depends on which path you take. Minting through the official merchant process involves a merchant fee on top of Ethereum gas, and the custodian's own verification step can add time. Swapping for WBTC on a DEX costs only the pool's spread plus gas, and it clears as soon as the transaction confirms. The table below lays out what to expect on each side so you can judge a quote before you sign.<table><thead><tr><th>Route</th><th>What you pay</th><th>Typical time</th></tr></thead><tbody><tr><td>DEX swap into WBTC</td><td>Ethereum gas + DEX spread</td><td>Minutes, one transaction</td></tr><tr><td>Official mint (BTC to WBTC)</td><td>Ethereum gas + merchant fee</td><td>Can take longer — merchant and custodian steps</td></tr><tr><td>Redeem (WBTC to BTC)</td><td>Gas + merchant fee</td><td>Processed through the burn-and-release flow</td></tr></tbody></table><h3>Why the mint path can take longer</h3>The merchant side of a mint has to verify your identity and coordinate with the custodian before any WBTC is issued, which adds process time that a plain DEX swap never has. None of that slows down a swap, since a DEX trade only waits on block confirmation.</div></section>
+<section class="c0b7e19"><h2 class="c477543">Minting vs Swapping Through a WBTC Bridge</h2><div class="c660ea4">Both paths end with WBTC sitting one-to-one against BTC in your wallet, but they get there differently, and the right choice depends on the amount and the time you have. Judge any WBTC Bridge quote by the <strong>net amount received</strong> after gas and fees, not the headline rate.<ul><li>Decide whether you are swapping existing on-chain BTC exposure or minting fresh WBTC against BTC you hold.</li><li>For a swap: connect your self-custody wallet to a DEX, enter the BTC-side asset, and review the WBTC amount quoted.</li><li>For an official mint: use a verified merchant, send BTC to the custodial address it provides, and wait for confirmation.</li><li>Check the fee and the amount you will receive before signing — never approve a transaction you have not read.</li><li>Confirm the WBTC lands at your address, then use it across Ethereum DeFi or hold it as a tracked BTC position.</li><li>To exit, swap back on a DEX or redeem through the official burn process to release the underlying BTC.</li></ul></div></section>
+<section class="c0b7e19"><h2 class="c477543">What a WBTC Bridge Unlocks on Ethereum</h2><div class="c660ea4">Once BTC value arrives as WBTC, it stops being a static balance and starts working the way any ERC-20 does. A WBTC Bridge is really the on-ramp to Bitcoin's liquidity joining Ethereum's application layer, without Bitcoin's own chain needing to change at all.<h3>Lending, liquidity and collateral</h3>WBTC is accepted as collateral on major lending markets, supplies liquidity on DEX pools paired against ETH and stablecoins, and backs structured and yield strategies that would be impossible on Bitcoin's own scripting layer. Bitcoin's size and liquidity flow into Ethereum's composability without either chain changing.<h3>Beyond Ethereum</h3>The same wrapped representation also circulates on other EVM chains through supported bridge routes, so this route is not limited to a single destination. The anchor is always the same: BTC reserved on Bitcoin, backing the circulating supply one-to-one wherever it is used. Moving WBTC onward from Ethereum to another chain is a separate hop, with its own fee and its own confirmation time.</div></section>
+<section class="c0b7e19"><h2 class="c477543">Is a WBTC Bridge Safe to Use?</h2><div class="c660ea4">A WBTC Bridge never asks you to give up custody of your keys — you sign the transaction yourself and your wallet holds the resulting WBTC. The backing is published and auditable: every WBTC in circulation should be matched by BTC held in reserve, redeemable through the official process.<h3>Approvals worth checking</h3>Before swapping, confirm the token contract address matches the official WBTC token, not an imitation with a similar name. Grant a limited token approval rather than an unlimited one, and revoke old approvals you no longer need so a stale contract can never move more than you intended.<h3>The one rule that never changes</h3>No merchant, custodian, wallet or support agent ever needs your seed phrase to complete this transaction. Anyone asking for it is attempting fraud. A real route only ever asks you to sign something you can read in your own wallet, with the amount and destination spelled out before you approve anything.</div></section>
+<section class="c0b7e19"><h2 class="c477543">WBTC vs Native Bitcoin: What Changes</h2><div class="c660ea4">Bitcoin itself never leaves its own chain — what changes is how its value can be used. Holding native BTC means Bitcoin-only security and Bitcoin-only applications; holding WBTC means an ERC-20 claim, redeemable one-to-one, that can plug into every Ethereum protocol. Neither is strictly better: WBTC trades a small amount of custodial trust in the mint-and-redeem process for access to a much larger set of markets, while native BTC keeps the simplest possible trust assumptions at the cost of staying idle outside Bitcoin's own chain.<h3>Why people choose WBTC</h3>Traders who want Bitcoin exposure that can also serve as collateral, earn lending yield or sit in a liquidity pool choose WBTC precisely because a WBTC Bridge makes that conversion reversible and verifiable, not because they expect it to replace holding BTC outright.</div></section>
+<section class="c0b7e19"><h2 class="c477543">Choosing the Right WBTC Bridge Route</h2><div class="c660ea4">Pick the DEX-swap path when you already have BTC exposure on-chain and want WBTC quickly for a moderate amount — the single-transaction flow and tight spread usually win on net amount received. Pick the official mint path for large transfers where the merchant fee is a smaller share of the total and the audited mint-and-burn process matters more than speed. Either way, read the quoted amount, check the contract address, and keep the transaction you sign in your own wallet from start to finish. Small transfers rarely justify the mint route's process time, while large ones rarely justify a thin swap pool's slippage — match the route to the size of the transfer, not the other way around.</div></section>
+<details class="c237241"><summary class="c4b9708">Is WBTC backed by real Bitcoin?</summary><div class="cbeb66a">Yes. Each WBTC in circulation is backed one-to-one by BTC held in reserve and can be redeemed back to Bitcoin through the official burn process. The reserve is published and can be checked against the circulating WBTC supply at any time.</div></details>
+<details class="c237241"><summary class="c4b9708">Do I need ETH for a WBTC Bridge?</summary><div class="cbeb66a">Yes. WBTC lives on Ethereum and other EVM chains, so you need a small amount of ETH to pay gas whether you are swapping for WBTC or minting it through the official route. Without ETH the transaction simply cannot be signed.</div></details>
+<details class="c237241"><summary class="c4b9708">Can I convert WBTC back to BTC?</summary><div class="cbeb66a">Yes. You can redeem WBTC through the official burn-and-release process, which sends native BTC back to a Bitcoin address, or swap WBTC for a BTC-pegged asset on a supported DEX route. Both paths keep the one-to-one backing intact.</div></details>
+<details class="c237241"><summary class="c4b9708">Do I need an account to get WBTC?</summary><div class="cbeb66a">To swap for WBTC on a DEX, no — you connect a self-custody wallet and sign the transaction yourself. The official mint path involves a verified merchant, which does require identity checks before the first mint.</div></details>
+<details class="c237241"><summary class="c4b9708">What happens if my transaction fails?</summary><div class="cbeb66a">A failed on-chain transaction reverts and your assets stay exactly where they were, though the gas spent attempting it is not refunded. Nothing is minted or swapped until a transaction actually confirms.</div></details>
+<details class="c237241"><summary class="c4b9708">Why use a WBTC Bridge instead of just holding BTC?</summary><div class="cbeb66a">Native BTC cannot interact with Ethereum smart contracts directly. This process converts that value into an ERC-20 that can be used as collateral, supply liquidity or earn yield across Ethereum DeFi, while remaining redeemable back to BTC whenever you want to exit. Holding both forms side by side is common — idle BTC in cold storage, working WBTC in DeFi.</div></details>
+<details class="c237241"><summary class="c4b9708">Is swapping for WBTC the same as minting it?</summary><div class="cbeb66a">No. Swapping trades an existing on-chain asset for already-minted WBTC through a DEX in one transaction. Minting is the process that creates new WBTC against BTC through the official merchant-and-custodian flow, which is what keeps the overall supply backed one-to-one.</div></details>
+</main>
+<section class="c09f713" id="sources" aria-labelledby="sources-title"><h2 class="cc45530" id="sources-title">Sources</h2><ul class="cc56874"><li><a class="c27ee14" href="https://wbtc.network/" rel="nofollow noopener" target="_blank">Wrapped Bitcoin (WBTC) — official site</a></li>
+<li><a class="c27ee14" href="https://en.wikipedia.org/wiki/Wrapped_bitcoin" rel="nofollow noopener" target="_blank">Wrapped Bitcoin on Wikipedia</a></li>
+<li><a class="c27ee14" href="https://etherscan.io/" rel="nofollow noopener" target="_blank">Etherscan token explorer</a></li></ul></section>
+<footer class="cb213d9"><p>Updated Oct 09, 2026</p><a href="#key-facts">Back to key facts <span aria-hidden="true">↑</span></a></footer>
 </div>
 <script>
 (() => {
   const amount = document.getElementById('amount');
-  const received = document.getElementById('received');
+  const net = document.getElementById('net');
   const fee = document.getElementById('fee');
   const time = document.getElementById('time');
   const error = document.getElementById('amount-error');
-  const number = new Intl.NumberFormat('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const speed = document.getElementById('speed');
+  const load = document.getElementById('load');
+  const SPEED = { std: [1, 1], fast: [1.6, 0.5], prio: [2.4, 0.3] };
+  const LOAD = { normal: 0, busy: 3 };
+  const format = new Intl.NumberFormat('en', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
   let timer;
   function update() {
-    const value = amount.valueAsNumber;
-    const valid = amount.value.trim() !== '' && Number.isFinite(value) && amount.validity.valid;
-    amount.setAttribute('aria-invalid', String(!valid));
-    error.hidden = valid;
-    error.textContent = valid ? '' : 'Enter an amount from 1 to 1,000,000,000 with up to 2 decimal places.';
-    if (!valid) {
-      received.textContent = '—';
+    const raw = amount.value.trim();
+    const validFormat = /^(?:\d+(?:[.,]\d{1,2})?|[.,]\d{1,2})$/.test(raw);
+    const value = Number(raw.replace(',', '.'));
+    if (!validFormat || !Number.isFinite(value) || value < 1 || value > 1000000) {
+      amount.setAttribute('aria-invalid', 'true');
+      error.textContent = raw === '' ? 'Enter an amount to calculate your estimate.' : 'Enter a number from 1 to 1,000,000 with up to two decimal places.';
+      error.hidden = false;
+      net.textContent = '—';
       fee.textContent = '—';
       time.textContent = '—';
       return;
     }
+    amount.removeAttribute('aria-invalid');
+    error.hidden = true;
+    error.textContent = '';
+    const [feeMul, timeMul] = SPEED[speed.value] || SPEED.std;
+    const extra = LOAD[load.value] || 0;
     const amountCents = Math.round(value * 100);
-    const feeCents = 50 + Math.round(amountCents * 35 / 10000);
-    received.textContent = number.format((amountCents - feeCents) / 100) + ' units';
-    fee.textContent = number.format(feeCents / 100) + ' units';
-    time.textContent = (2 + Math.ceil(value / 10000)).toLocaleString('en-US') + ' min';
+    const feeCents = Math.round((50 + amountCents * 0.0025) * feeMul);
+    const base = Math.max(1, Math.round((2 + Math.ceil(Math.log10(value))) * timeMul));
+    const minutes = base + extra;
+    net.textContent = format.format((amountCents - feeCents) / 100);
+    fee.textContent = format.format(feeCents / 100) + ' units';
+    time.textContent = minutes + '–' + (minutes + 3) + ' min';
   }
   amount.addEventListener('input', () => {
     clearTimeout(timer);
@@ -228,6 +258,8 @@ h1 em{color:var(--accent);font-style:normal}
     clearTimeout(timer);
     update();
   });
+  speed.addEventListener('change', update);
+  load.addEventListener('change', update);
   update();
 })();
 </script>
